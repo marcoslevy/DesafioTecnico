@@ -2,12 +2,7 @@
 
 Pré-requisitos
 ## Instalar .NET 8.0
-Certifique-se de que o .NET 8.0 está instalado em sua máquina. Para verificar, execute o seguinte comando no terminal:
-```bash
-dotnet --version
-```
-Se a versão exibida for 8.0.x, você está pronto para prosseguir. Caso contrário, instale o .NET 8.0 seguindo as instruções em dotnet.microsoft.com.
-
+Certifique-se de que o .NET 8 está instalado em sua máquina.
 
 ### Este projeto utiliza vários containers Docker para rodar as dependências necessárias. Abaixo estão os passos para configurar e executar a aplicação.
 
