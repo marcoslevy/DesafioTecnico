@@ -10,6 +10,7 @@ public class VendaByIdViewModel
         Data = data;
         Cliente = cliente;
         Itens = itens;
+        Status = status;
     }
 
     public int Id { get; set; }

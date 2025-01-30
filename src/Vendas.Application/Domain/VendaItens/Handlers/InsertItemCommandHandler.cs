@@ -26,6 +26,17 @@ public class InsertItemCommandHandler : IRequestHandler<InsertItemCommand, Resul
         if (venda is null)
             return ResultViewModel.Error("Venda não encontrada.");
 
+        if (venda.DataStatus is not null)
+        {
+            switch (venda.Status)
+            {
+                case VendaEnum.Faturada:
+                    return ResultViewModel.Error("Venda já está faturada.");
+                case VendaEnum.Cancelada:
+                    return ResultViewModel.Error("Venda já está cancelada.");
+            }
+        }
+
         var produto = await _repositoryProduto.GetByIdAsync(request.ProdutoId);
 
         if (produto is null)
