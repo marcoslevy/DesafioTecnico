@@ -51,7 +51,7 @@ Após todos os containers estiverem em execução, siga os passos abaixo para co
 ### 1. Gerar Token de Autorização
 
 Acesse a API de autenticação para gerar um token:
-  * URL: https://localhost:7226/swagger/index.html
+  * URL: https://localhost:7108/swagger/index.html
   * Método: POST /api/Authentication/login
   * Request:
     ```Json
