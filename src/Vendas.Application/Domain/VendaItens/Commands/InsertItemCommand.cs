@@ -8,5 +8,4 @@ public class InsertItemCommand : IRequest<ResultViewModel>
     public int VendaId { get; set; }
     public int ProdutoId { get; set; }
     public decimal Quantidade { get; set; }
-    public decimal ValorUnitario { get; set; }
 }
